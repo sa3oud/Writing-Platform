@@ -1,0 +1,22 @@
+export const GENRES = [
+  'Fiction', 
+  'Non-Fiction', 
+  'Poetry', 
+  'Essay', 
+  'Short Story', 
+  'Novel Excerpt', 
+  'Blog Post', 
+  'Science Fiction',
+  'Fantasy',
+  'Historical Fiction',
+  'Mystery',
+  'Thriller',
+  'Romance',
+  'Horror',
+  'Travel Writing',
+  'Biography',
+  'Memoir',
+  'Philosophical',
+  'Technical Writing',
+  'Other'
+];

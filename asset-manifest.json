@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/last-writing-platform/static/css/main.b818cf3d.css",
+    "main.js": "/last-writing-platform/static/js/main.07aca8c9.js",
+    "index.html": "/last-writing-platform/index.html",
+    "main.b818cf3d.css.map": "/last-writing-platform/static/css/main.b818cf3d.css.map",
+    "main.07aca8c9.js.map": "/last-writing-platform/static/js/main.07aca8c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b818cf3d.css",
+    "static/js/main.07aca8c9.js"
+  ]
+}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import { PlusCircle, Book, Settings } from 'lucide-react';
+import { PlusCircle, Book, Settings as SettingsIcon } from 'lucide-react';
 import './index.css';
 
 // Placeholder components - we'll develop these fully later
@@ -40,9 +40,9 @@ const WriteNew = () => (
   </div>
 );
 
-const Settings = () => (
+const SettingsPage = () => (
   <div className="p-6">
-    <h2 className="text-2xl font-bold mb-4">Settings</h2>
+    <h2 className="text-2xl font-bold mb-4">Portfolio Settings</h2>
     <div className="bg-gray-100 p-4 rounded-md">
       <p className="text-gray-600">Customize your Writing Portfolio</p>
     </div>
@@ -74,7 +74,7 @@ function App() {
           <nav className="flex space-x-4">
             <NavButton icon={Book} label="Writings" tab="writings" />
             <NavButton icon={PlusCircle} label="New" tab="new" />
-            <NavButton icon={Settings} label="Settings" tab="settings" />
+            <NavButton icon={SettingsIcon} label="Settings" tab="settings" />
           </nav>
         </div>
       </header>
@@ -82,7 +82,7 @@ function App() {
       <main className="container mx-auto px-4 py-8">
         {activeTab === 'writings' && <WritingList />}
         {activeTab === 'new' && <WriteNew />}
-        {activeTab === 'settings' && <Settings />}
+        {activeTab === 'settings' && <SettingsPage />}
       </main>
     </div>
   );

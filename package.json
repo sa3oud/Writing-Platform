@@ -1,8 +1,10 @@
 {
   "name": "writing-platform",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "homepage": "https://sa3oud.github.io/Writing-Platform",
   "private": true,
   "dependencies": {
+    "@octokit/rest": "^21.1.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -17,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,8 +42,9 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.3",
+    "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.31",
-    "autoprefixer": "^10.4.16"
+    "tailwindcss": "^3.3.3"
   }
 }

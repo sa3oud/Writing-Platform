@@ -15,13 +15,13 @@ const VersaceBackground = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     mountRef.current.appendChild(renderer.domElement);
 
-    // Versace-inspired color palette
+    // More intense, smooth color palette
     const colors = [
-      0xf3e5f5,   // Soft Lavender
-      0xfff3e0,   // Delicate Peach
-      0xe0f2f1,   // Pale Mint
-      0xfbe9e7,   // Soft Rose
-      0xf1f8e9    // Soft Sage
+      0x6A5ACD,   // Smooth Slate Blue
+      0x4169E1,   // Royal Blue with depth
+      0x8A2BE2,   // Deep Blue Violet
+      0x483D8B,   // Dark Slate Blue
+      0x5D3FD3    // Rich Iris Purple
     ];
 
     // Geometric shapes inspired by Versace patterns
@@ -38,9 +38,9 @@ const VersaceBackground = () => {
       const material = new THREE.MeshStandardMaterial({
         color: colors[Math.floor(Math.random() * colors.length)],
         transparent: true,
-        opacity: 0.5,
-        metalness: 0.3,
-        roughness: 0.6
+        opacity: 0.6,
+        metalness: 0.4,
+        roughness: 0.5
       });
 
       const shape = new THREE.Mesh(geometry, material);

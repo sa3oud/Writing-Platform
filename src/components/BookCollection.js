@@ -5,22 +5,22 @@ const books = [
   {
     title: "Etymolopathia",
     description: "A profound exploration of linguistic origins and psychological pathways",
-    spine: "bg-gradient-to-r from-gold-300 to-gold-500"
+    spine: "bg-gradient-to-r from-indigo-600 to-indigo-800"
   },
   {
     title: "Anecdodo",
     description: "A collection of whimsical and thought-provoking anecdotes",
-    spine: "bg-gradient-to-r from-lavender-300 to-lavender-500"
+    spine: "bg-gradient-to-r from-purple-600 to-purple-800"
   },
   {
     title: "Awaaah",
     description: "An introspective journey through human emotions and expressions",
-    spine: "bg-gradient-to-r from-rose-300 to-rose-500"
+    spine: "bg-gradient-to-r from-blue-600 to-blue-800"
   },
   {
     title: "No mum, we'll not meet in heaven",
     description: "A provocative narrative challenging familial and spiritual constructs",
-    spine: "bg-gradient-to-r from-indigo-300 to-indigo-500"
+    spine: "bg-gradient-to-r from-violet-600 to-violet-800"
   }
 ];
 
@@ -35,8 +35,8 @@ const BookIcon = ({ book, onSelect }) => {
           {book.title}
         </div>
       </div>
-      <div className="book-cover bg-white w-36 h-48 border-2 border-gray-200 rounded-sm shadow-md flex items-center justify-center">
-        <Book className="text-gray-400" size={48} />
+      <div className="book-cover bg-white w-36 h-48 border-2 border-gray-700 rounded-sm shadow-md flex items-center justify-center">
+        <Book className="text-gray-800" size={48} />
       </div>
     </div>
   );
